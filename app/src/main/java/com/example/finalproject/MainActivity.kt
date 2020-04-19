@@ -1,8 +1,10 @@
 package com.example.finalproject
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-
+import androidx.appcompat.app.AppCompatActivity
+/**
+ * Represents the main screen of the app, where the user can view and enter games.
+ */
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
