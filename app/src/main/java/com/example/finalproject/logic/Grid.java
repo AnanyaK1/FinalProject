@@ -22,8 +22,6 @@ public class Grid {
             try {
 
                 //Provide number of rows and column
-                int row = 4;
-                int col = 3;
                 File file = new File(fileName);
                 Image image = new Image(file.toURI().toString());
                 imageView = new ImageView(image);
@@ -37,15 +35,15 @@ public class Grid {
                 System.out.println("Image Dimension: " + Width + "x" + Height);
 
                 //width and height of each piece
-                int eWidth = Width / col;
-                int eHeight = Height / row;
+                int eWidth = Width / columns;
+                int eHeight = Height / rows;
 
                 int x = 0;
                 int y = 0;
 
-                for (int i = 0; i < row; i++) {
+                for (int i = 0; i < rows; i++) {
                     y = 0;
-                    for (int j = 0; j < col; j++) {
+                    for (int j = 0; j < columns; j++) {
                         try {
                             System.out.println("creating piece: " + i + " " + j);
 
